@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentificare</title>
+    <link rel="stylesheet" href="/tabs/autentificare/styles/autentificare.css" />
+    <link rel="icon" type="image/png" href="/img/logo-bar.png">
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
+    <!-- font-family: 'Montserrat' -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto' -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="/index.html"><img class="home" src="/img/logo-luna.png"></a>
+    </nav>
+    <form class="form" action="/index.html">
+        <h1>Autentificare</h1>
+        <label for="mail" id="fault1" class="writing">EMAIL:</label><br><br>
+        <input type="email" class="box" id="mail"><br>
+        <p class="para">(Asigura-te că folosești<br> adresa corecta de email.)</p>
+        <label for="psw" id="fault2" class="writing">PAROLA:</label><br><br>
+        <input type="password" class="box" id="psw"><br><br>
+        <p class="para">(Parola trebuie să conțină minim 8 <br> caractere litere mici şi mari,<br> numere şi caractere.)
+        </p>
+        <input type="checkbox" onclick="show()">Vezi Parola<br><br>
+        <input type="checkbox">Salvează-mi detaliile<br><br>
+        <input type="submit" id="btn" value="Loghează-te"><br><br>
+        <a href="/tabs/creare-cont/creare-cont.html" class="register">Nu ai cont? > Înregistrează-te!</b></a>
+    </form>
+
+
+</body>
+<script type="text/javascript" src="autentificare.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creare Cont</title>
+    <link rel="stylesheet" href="/tabs/creare-cont/styles/creare-cont.css" />
+    <link rel="icon" type="image/png" href="/img/logo-bar.png">
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-a11y="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- font-family: 'Montserrat' -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto' -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="/index.html"><img class="home" src="/img/logo-luna.png"></a>
+    </nav>
+    <form id="form" action="/tabs/creare-cont/welcome/welcome.html">
+        <h1>Creați-vă contul</h1>
+        <label for="username" id="prepend1">USER:</label><br><br>
+        <input type="text" class="box" id="username"><br>
+        <p class="para">Trebuie să conțină minim 4 caractere. (Doar litere.)</p>
+        <label for="theMail" id="prepend2">EMAIL:</label><br><br>
+        <input type="text" class="box" id="theMail"><br>
+        <p class="para">Trimitem emailul de confirmare la această adresă.<br>(Verifică emailul înainte de a continua.)
+        </p>
+        <label for="the-name" id="prepend3">NUME:</label><br><br>
+        <input type="text" class="box" id="the-name"><br>
+        <p class="para">Introdu un nume.</p>
+        <label for="psw" id="prepend4">PAROLĂ:</label><br><br>
+        <input type="password" class="box" id="psw"><br>
+        <p class="para">Parola trebuie să conțină minim 8 <br> caractere litere mici şi mari,<br> numere şi caractere.
+        </p>
+        <label for="psw-verif" id="prepend5">CONFIRMARE PAROLA:</label><br><br>
+        <input type="password" class="box" id="psw-verif"><br>
+        <p class="para">Trebuie să fie exact ca prima parolă.</p>
+        <label for="phone" id="prepend6">TEL.:</label><br><br>
+        <input type="number" class="box" id="phone"><br>
+        <p class="para">Trebuie să conțină doar 10 caractere numerice.</p><br>
+        <input type="checkbox" name=checkbox id="check1" value="site">
+        <label for="radio1">Accept termenii si condițiile.</label><br><br>
+        <input type="submit" id="btn" value="ÎNREGISTREAZĂ-TE!"><br><br>
+    </form>
+
+</body>
+<script type="text/javascript" src="/tabs/creare-cont/creareCont.js"></script>
+
+</html>

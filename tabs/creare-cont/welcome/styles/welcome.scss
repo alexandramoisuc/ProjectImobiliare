@@ -1,0 +1,55 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+$blurred: linear-gradient(bottom left, #3b3d43ba 4%, #2d3645e0 2%);
+
+/* phone & tablet view */
+
+@media all and (min-device-width: 0*320px) {
+  body {
+    background-image: url(/img/welcome-phone.jpg);
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  h1 {
+    color: #c67b1f;
+    text-shadow: 1px 1px #0c0c0c;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20%;
+  }
+
+  a {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  @media all and (min-device-width: 768px) {
+    body {
+      background-image: url(/img/welcome-tablet.jpeg);
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 40px;
+      padding: 20%;
+    }
+  }
+
+  @media all and (min-width: 1080px) {
+    body {
+      background-image: $blurred, url(/img/welcome.jpeg);
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    h1 {
+      padding: 0;
+      text-align: unset;
+      font-size: xx-large;
+    }
+  }
+}

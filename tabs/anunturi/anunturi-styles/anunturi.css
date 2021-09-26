@@ -1,0 +1,97 @@
+* {
+  font-family: "Roboto";
+}
+
+body {
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(4%, #f5f3f162));
+  background-image: linear-gradient(bottom left, #f5f3f162 4%);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+@media all and (min-device-width: 0px) {
+  nav {
+    text-align: center;
+  }
+  .home {
+    width: 70px;
+    margin-bottom: 10%;
+  }
+  .home:hover,
+  .home:active {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 2%;
+    -webkit-box-shadow: 0px 15px 20px #e5b12e66;
+            box-shadow: 0px 15px 20px #e5b12e66;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  h1 {
+    font-size: 25px;
+    color: #d77a16;
+  }
+  #img_pres {
+    text-align: center;
+    margin: 5% 0;
+  }
+  .slide {
+    width: 80%;
+    border-radius: 1%;
+    -webkit-box-shadow: 0 4px 8px 0 #00000035, 0 6px 20px 0 #00000035;
+            box-shadow: 0 4px 8px 0 #00000035, 0 6px 20px 0 #00000035;
+  }
+  .descriere {
+    background-color: #fafafa3a;
+    width: 90%;
+    border-radius: 1%;
+    -webkit-box-shadow: 0 4px 8px 0 #00000035, 0 6px 20px 0 #00000035;
+            box-shadow: 0 4px 8px 0 #00000035, 0 6px 20px 0 #00000035;
+    padding: 2%;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 15px;
+  }
+  .pret {
+    margin-bottom: 10%;
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media all and (min-device-width: 768px) {
+  .home {
+    width: 120px;
+    margin-bottom: 2%;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 20px;
+  }
+  h2,
+  .pret {
+    font-size: 25px;
+    margin-bottom: 5%;
+  }
+}
+/*# sourceMappingURL=anunturi.css.map */

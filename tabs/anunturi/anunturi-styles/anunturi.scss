@@ -1,0 +1,106 @@
+* {
+  font-family: "Roboto";
+}
+
+//color palette
+
+$white: #f9eed8;
+$orange: #d77a16;
+$blurred: linear-gradient(bottom left, #f5f3f162 4%);
+$box-shadow: 0 4px 8px 0 #00000035, 0 6px 20px 0 #00000035;
+//styles
+
+@mixin cover {
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  background-image: $blurred;
+  @include cover();
+  min-height: 100vh;
+}
+
+//Phone view
+
+@media all and (min-device-width: 0*320px) {
+  nav {
+    text-align: center;
+  }
+  .home {
+    width: 70px;
+    margin-bottom: 10%;
+  }
+
+  .home:hover,
+  .home:active {
+    transition: 0.2s;
+    border-radius: 2%;
+    box-shadow: 0px 15px 20px #e5b12e66;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 25px;
+    color: $orange;
+  }
+
+  #img_pres {
+    text-align: center;
+    margin: 5% 0;
+  }
+  .slide {
+    width: 80%;
+    border-radius: 1%;
+    box-shadow: $box-shadow;
+  }
+  .descriere {
+    background-color: #fafafa3a;
+    width: 90%;
+    border-radius: 1%;
+    box-shadow: $box-shadow;
+    padding: 2%;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .pret {
+    margin-bottom: 10%;
+    color: red;
+    font-weight: bold;
+  }
+}
+// Tablet and desktop view
+
+@media all and (min-device-width: 768px) {
+  .home {
+    width: 120px;
+    margin-bottom: 2%;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h2,
+  .pret {
+    font-size: 25px;
+    margin-bottom: 5%;
+  }
+}

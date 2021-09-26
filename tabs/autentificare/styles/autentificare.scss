@@ -1,0 +1,158 @@
+* {
+  font-family: "Roboto";
+}
+
+//color palette
+
+$white: #fff5e0;
+$darkblue: #000814;
+$blue: #002a52;
+$orange: #f57f00;
+$darkorange: #c6891f;
+$blurred: linear-gradient(bottom left, #535663d9 2%, #454d5be0 1%);
+$blkshadow: #0000009a;
+$red: #ac3509;
+$wine: #600c03;
+
+//styles
+
+@mixin cover {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin hover {
+  transition: 0.2s;
+  background-color: $orange;
+  box-shadow: 0px 15px 20px #e5b12e66;
+  color: $white;
+  transform: translateY(-7px);
+}
+
+body {
+  background-image: $blurred, url(/img/autentificare.jpeg);
+  @include cover();
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Phone view
+
+@media all and (min-device-width: 0*320px) {
+  .faulty {
+    color: $blue;
+    background-color: $red;
+    font-weight: bold;
+    width: 100%;
+    padding: 5px 0;
+    border: solid 2px $red;
+    display: none;
+    border-radius: 5px;
+  }
+
+  h1 {
+    color: $white;
+    text-shadow: 1px 1px $darkorange;
+    font-family: "Montserrat";
+  }
+
+  .box {
+    width: 100%;
+    background-color: $white;
+    border: $darkorange solid 1px;
+    height: 25px;
+    border-radius: 5px;
+  }
+
+  .home {
+    width: 80px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $darkorange;
+    margin-top: 10%;
+  }
+
+  .home:hover,
+  .home:active {
+    transition: 0.2s;
+    border-radius: 2%;
+    box-shadow: 0px 15px 20px #e5b12e66;
+  }
+
+  .para {
+    color: $wine;
+  }
+
+  .form {
+    color: $darkorange;
+    text-shadow: 1px 1px black;
+    text-align: center;
+  }
+  .register {
+    color: $darkorange;
+  }
+
+  .register:hover {
+    color: $blue;
+    text-shadow: 0.5px 0.5px $orange;
+  }
+
+  #btn {
+    background-color: $white;
+    color: $darkorange;
+    border: $darkblue;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    box-shadow: 0px 8px 15px $darkblue;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease 0s;
+  }
+
+  #btn:hover {
+    @include hover();
+  }
+}
+
+// Tablet view
+
+@media all and (min-device-width: 768px) {
+  body {
+    font-size: x-large;
+  }
+  .home {
+    width: 100px;
+  }
+
+  .box {
+    height: 40px;
+    font-size: x-large;
+  }
+
+  #btn {
+    font-size: 25px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .home {
+    width: 120px;
+  }
+
+  .form {
+    margin-left: 40%;
+    margin-bottom: 8%;
+  }
+
+  body {
+    display: flex;
+  }
+}

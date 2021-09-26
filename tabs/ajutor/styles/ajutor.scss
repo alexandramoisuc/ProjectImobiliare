@@ -1,0 +1,180 @@
+* {
+  font-family: "Roboto";
+}
+
+//color palette
+
+$white: #fff5e0;
+$darkblue: #000814;
+$blue: #002a52;
+$orange: #f59b00;
+$darkorange: #d09021;
+$blurred: linear-gradient(bottom left, #535663d9 2%, #454d5be0 1%);
+$blkshadow: #0000009a;
+$red: #ac3509;
+
+//styles
+
+@mixin cover {
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin hover {
+  transition: 0.2s;
+  background-color: $orange;
+  box-shadow: 0px 15px 20px #e5b12e66;
+  color: $white;
+  transform: translateY(-7px);
+}
+
+body {
+  background-image: $blurred, url(/img/ajutorbk.jpg);
+  @include cover();
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label,
+input,
+textarea {
+  display: block;
+}
+input,
+textarea {
+  width: 100%;
+  background-color: $white;
+  border: $blue solid 1px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+
+textarea {
+  height: 100px;
+}
+
+label {
+  color: $darkorange;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  padding: 0 10px;
+}
+
+#btn {
+  font-family: "Motserrat";
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: $red;
+  margin-top: 10%;
+  text-decoration: none;
+  border-radius: 20px;
+  border: $darkblue;
+  box-shadow: 0px 8px 15px $darkblue;
+  font-size: 1.5vw;
+  padding: 10px 25px;
+  text-shadow: 1px 1px $darkblue;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+#btn:hover {
+  @include hover();
+}
+
+.status {
+  color: $red;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h1 {
+  color: $blkshadow;
+  text-shadow: 1px 1px $darkorange;
+  font-family: "Motserrat";
+  text-align: center;
+  margin: 20px 0;
+}
+
+// Phone view
+
+@media all and (min-device-width: 0*320px) {
+  nav {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+
+  .home {
+    width: 130px;
+  }
+
+  a {
+    margin-top: 10%;
+  }
+
+  a:hover,
+  a:active {
+    transition: 0.2s;
+    border-radius: 2%;
+    box-shadow: 0px 15px 20px #e5b12e66;
+    transform: translateY(-7px);
+  }
+
+  form {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+// Tablet view
+
+@media all and (min-device-width: 768px) {
+  .home {
+    width: 170px;
+  }
+  form {
+    margin-top: 10%;
+    padding: 2%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  input,
+  textarea {
+    margin: 5% 0 5% 10%;
+    width: 80%;
+  }
+}
+
+// Desktop view
+
+@media all and (min-width: 1080px) {
+  form {
+    margin-top: 5%;
+    margin-left: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  label {
+    padding: 0;
+    margin: 0;
+  }
+
+  .all-form {
+    padding: 7%;
+    border: solid $blkshadow;
+    border-radius: 2%;
+    background-color: $blurred;
+  }
+}

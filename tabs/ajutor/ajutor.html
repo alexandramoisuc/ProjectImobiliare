@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajutor</title>
+    <link rel="stylesheet" href="/tabs/ajutor/styles/ajutor.css" />
+    <link rel="icon" type="image/png" href="/img/logo-bar.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- font-family: 'Montserrat' -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto' -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="/index.html" class="home"><img class="home" src="/img/logo-luna.png"></a>
+    </nav>
+    <div class="all-form">
+        <h1>Formular de Contact</h1>
+        <form action=https://formspree.io/f/mzbyovdk method="POST">
+            <label>
+                E-mail
+                <input type="email" class="email" name="E-mail" />
+            </label>
+            <label>
+                Subiect
+                <input type="text" class="subject" name="Subject" />
+            </label>
+            <label>
+                Mesaj
+                <textarea class="message" name="Message"></textarea>
+            </label>
+            <div class="status">
+
+            </div>
+            <button type="submit" class="submit" id="btn">Trimite</button>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="/tabs/ajutor/ajutor.js"></script>
+
+</html>
